@@ -1,0 +1,475 @@
+@import 'utilities.css';
+:root{
+    --primary: #3dcfd3;
+    --dark: #161616;
+    --pure: #fff;
+    --ternary: #898989;
+    --light: #f2f2f2;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 90%, 0 100%);
+}
+
+.container{
+    width: 65%;
+    margin: 0 auto;
+}
+
+nav{
+    padding: 1.5rem 0;
+}
+
+.branding{
+    margin-right: 1.7rem;
+}
+
+
+.nav-list a{
+    margin-right: 1rem;
+    color: var(--pure);
+    font-weight: 400;
+    font-size: small;
+}
+
+.hero .hero__left img{
+    height: 28rem;
+}
+
+.hero{
+    padding: 1.5rem 0;
+    
+}
+
+.hero__left{
+   width: 50%;
+
+}
+
+.hero__right{
+   width: 50%;
+   color: var(--pure);
+   margin-top: 3.1rem;
+}
+
+.hero__right h6{
+    font-size: 1.1rem;
+    color: var(--primary);
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.hero__right h1{
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero__right h1 span{
+    color: var(--primary);
+}
+
+.hero__right p{
+    line-height: 1.3rem;
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-section{
+    margin-top: 6rem;
+}
+
+.about-section .about-section__img-block{
+   margin-right: 8rem;
+}
+
+.about-section .about-section__img-block img{
+    height: 24rem
+}
+
+
+.about-section__text-block h2{
+    font-weight: 200;
+    margin-bottom: 1.5rem;
+}
+
+.about-section__text-block h2 span{
+    color: var(--primary);
+}
+
+.about-section__text-block h6{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.about-section__text-block p{
+    font-size: 0.8rem;
+    font-family: 'Lato', sans-serif;
+    color: var(--ternary);
+    line-height: 1.3rem;
+    margin-bottom: 2.5rem;
+}
+
+section.services{
+    margin-top: 6rem;
+    background: var(--light);
+    padding: 4rem 0;
+}
+
+
+section .container h2{
+    text-align: center;
+    font-weight: 200;
+    margin-bottom: 0.5rem;
+}
+
+section .container h2 span{
+    color: var(--primary);
+}
+
+section .container h2 + p{
+    font-size: 0.8rem;
+    font-family: 'Lato', sans-serif;
+    color: var(--ternary);
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+section .container .card-wrapper{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 3.1rem;
+}
+
+section .container .card-wrapper .card{
+    text-align: center;
+    position: relative;
+    padding: 2rem;
+    background: var(--pure);
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+section .container .card-wrapper .card:hover{
+    background: var(--dark);
+}
+
+section .container .card-wrapper .card:hover h6, section .container .card-wrapper .card:hover p{
+    color: var(--pure);
+}
+
+section .container .card-wrapper .card img{
+    height: 4rem;
+    width: 4rem;
+    position: absolute;
+    top: -2.3rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+section .container .card-wrapper .card h6{
+   margin-bottom: 0.5rem;
+   margin-top: 1rem;
+   font-size: 0.9rem;
+}
+
+section .container .card-wrapper .card p{
+    color: var(--ternary);
+    font-family: 'Lato', sans-serif;
+    font-size: 0.7rem;
+    line-height: 1.6;
+}
+
+section.freelancer{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('/images/camera.png');
+    text-align: center;
+    color: var(--pure);
+    padding: 4rem 0;
+    background-position: bottom;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 77% 84%, 0 100%);
+}
+
+section.freelancer h1{
+    margin-bottom:0.5rem;
+    text-transform: capitalize;
+}
+
+section.freelancer p{
+    font-size: 0.7rem;
+    font-family: 'Lato', sans-serif;
+    color: var(--light);
+    margin-bottom: 2rem;
+}
+
+section.freelancer button{
+    margin-bottom: 4rem;
+}
+
+.reviews{
+    text-align: center;
+    margin: 6rem auto;
+}
+
+.reviews h1{
+    font-weight: 400;
+    margin-bottom: 0.7rem;
+}
+
+.reviews h1 span{
+    color: var(--primary);
+}
+
+.reviews p{
+    font-size: 0.8rem;
+    font-family: 'Lato', sans-serif;
+    color: var(--ternary);
+    margin-bottom: 1rem;
+}
+
+.reviews .slider{
+    padding: 2rem 12rem;
+}
+
+
+
+.reviews .slider .slide img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+}
+
+.reviews .slider .slide span{
+    font-size: 0.8rem;
+}
+
+.reviews .slider .slide p{
+    line-height: 1.6;
+}
+
+
+.reviews .slider-dots .dots{
+    display: flex!important;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviews .slider-dots .dots li button{
+    font-size: 0;
+    height: 4px;
+    width: 8px;
+    border: none;
+    outline: none;
+    background: var(--ternary);
+    margin-right: 0.3rem;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.reviews .slider-dots .dots li.slick-active button{
+    background: var(--primary);
+    width: 16px;
+}
+
+section.work{
+    background: var(--light);
+    padding: 4rem 0;
+}
+
+section.work .work__card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+section.work .work__card-wrapper .card img{
+    height: 100%
+}
+
+section.work .work__card-wrapper .card{
+    position: relative;
+    height: 200px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+section.work .work__card-wrapper .card .overlay{
+    position: absolute;
+    background: rgba(61, 207, 211, 0.7);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+}
+
+section.work .work__card-wrapper .card:hover .overlay{
+    opacity: 1;
+}
+
+section.work .work__card-wrapper .card .overlay h6{
+    color: var(--pure);
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+section.work .work__card-wrapper .card .overlay span{
+    font-size: 0.7rem;
+}
+
+section.blog{
+    padding: 4rem 0;
+    background: var(--dark);
+    padding-bottom: 12rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 90%, 0 100%);
+}
+
+section.blog .container h2{
+    color: var(--pure);
+}
+
+section.blog .container .blog__card-wrapper{
+    margin-top: -2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+section.blog .container .blog__card-wrapper .card{
+    background: var(--pure);
+}
+
+
+section.blog .container .blog__card-wrapper .card img{
+    width: 100%;
+}
+
+section.blog .container .blog__card-wrapper .card .text-content{
+    text-align: left;
+    padding: 1rem 0;
+    margin: 0 auto;
+    width: 90%;
+}
+
+section.blog .container .blog__card-wrapper .card .text-content h6{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+section.blog .container .blog__card-wrapper .card .text-content h6:hover{
+    color: var(--primary);
+}
+
+section.blog .container .blog__card-wrapper .card .text-content p{
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    color: var(--ternary);
+}
+
+section.blog .container .blog__card-wrapper .card .text-content p + h6{
+    font-size: 0.7rem;
+}
+
+
+section.contact .container{
+    margin: 6rem auto;
+}
+
+section.contact .container .contact__card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+section.contact .container .contact__card-wrapper .card{
+    text-align: center;
+}
+
+section.contact .container .contact__card-wrapper .card img{
+    margin-bottom: 1rem;
+}
+
+section.contact .container .contact__card-wrapper .card h2{
+    text-transform: capitalize;
+}
+
+section.contact .container .input-wrap{
+    margin-bottom: 2rem;
+}
+
+section.contact .container  input, textarea{
+    padding: 0.4rem 0.6rem;
+    border: 1px solid var(--light);
+    
+}
+
+section.contact .container  input:focus, textarea:focus{
+    outline: none;
+}
+section.contact .container .input-wrap input:last-child{
+    margin-left: 2rem;
+}
+
+section.contact .container .input-wrap-2{
+    margin-bottom: 2rem;
+}
+
+section.contact .container .text-area{
+    margin-bottom: 1rem;
+}
+
+section.contact .container .btn-wrap{
+    text-align: center;
+}
+
+footer{
+    background: var(--dark);
+    padding: 3rem 0;
+}
+
+
+footer .container img{
+    height: 60px;
+    margin-bottom: 2rem;
+}
+
+footer .container span{
+    color: var(--ternary);
+    font-weight: 400;
+    font-size: 0.9rem;
+
+}
+
