@@ -7,7 +7,6 @@ This is a mobile-first responsive portfolio website UI made for practice.
 - [Overview](#overview)
   - [Objective](#Objective)
   - [Screenshot](#screenshot)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -33,10 +32,6 @@ Users should be able to:
 ![](./images/screenshots/mobile-header.png)
 ![](./images/screenshots/mobile-blog.png)
 ![](./images/screenshots/mobile-about.png)
-
-### Links
-
-- Live Site URL: [demo here](https://ankitsingh435517.github.io/house_Rent_website/)
 
 ## My process
 
